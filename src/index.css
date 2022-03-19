@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+@import url('../public/image.jpg');
+
+/*  */
+html{
+    background-color: gray;
+    font-family: 'Inter', sans-serif;
+    width:1500px;
+    height:3000px;    
+}
+
+.content {
+    border: 5px solid black;
+}
+
+/* Creates the background for Iribe kiosk with an image of Iribe */
+.background-image{
+    margin-left:25%;
+    margin-right:25%;
+    height:100%;
+    background-color: white;
+    border: 5px solid black;
+
+    align-items: center;
+    text-align: center;
+    padding:10px;
+    background-image: url("../public/image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* Transparent blue overlay */
+.overlay{
+    background-color: rgba(108, 154, 255, 0.801);
+}
+
+/* Setting global styles for standard practice */
+h1{
+    color:black;
+    font-weight: bold;
+    font-size:40px;
+    margin-left:20%;
+    margin-right:20%;
+    margin-top: 20%;
+}
+
+h2{
+    color:white;
+    font-size:22px;
+    margin-top:20%;
+}
+p{
+    font-size:14px;
+}
+
+button{
+    height:100px;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin:5%;
+}
+
+button:focus{
+    background-color: rgba(255, 255, 255, .9);
+}
+
+
+/* Design the button group */
+.button-group{
+}
+
+/* This will be moved to a separate component */
+.landing-page-button{
+}
+
+.landing-page-button:focus{
+    
+}
+
+
+.navigation-button{
+    width:70%;
+    color:black;
+    /* font-weight: bold; */
+    font-size:20px;
+
+}
