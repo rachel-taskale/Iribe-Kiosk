@@ -13,14 +13,15 @@
           <link rel="stylesheet" href="./index.css">
           <script src="./index.js"></script>
           <script type="text/javascript">
-            var landing_button = document.getElementById("welcome");
-            function onClick(){
+            function onClick(url){
               console.log("made it here")
-              location.assign('file:///C:/Users/rache/cmsc434/Iribe-Kiosk-2/src/pages/landing-page.html');
+              location.assign(url);
               console.log(window.location.href);
             }
 
           </script>
+
+      <title>Iribe Kiosk</title>
       </head>
       <body>
           <body>
@@ -29,13 +30,24 @@
               <h2>You are on Floor 0</h2>
       
               <div id = "button-group">
-
+                <!-- <a href="#">
+                  <button >Welcome!</button>
+              </a> -->
 
               <header>
                 <ul>
-                  <button id="welcome" onclick="onClick()">Welcome</button>
+                  <button class="" onclick="onClick('<put your file location here>')">Floor & Campus Map</button>
+                  <button class="" onclick="onClick('<put your file location here>')">Directory Search</button>
+                  <button class="" onclick="onClick('<put your file location here>')">Schedule of Events</button>
                 </ul>
               </header>
+
+                <!-- <ul> -->
+                  <!-- Will eventually be a separate custom component -->
+                  <!-- <button class="landing-page-button">Floor Map + Campus Map</button>
+                  <button class="landing-page-button">Directory Search</button>
+                  <button class="landing-page-button">Schedule of Events</button>  -->
+                <!-- </ul> -->
               </div>
            
             </body>
