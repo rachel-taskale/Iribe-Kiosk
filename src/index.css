@@ -9,15 +9,15 @@ html{
 }
 
 .content {
-    height:300px;
-    width: 475px;
+    height:540px;
+    width: 855px;
     border: px solid black;
 }
 
 /* Creates the background for Iribe kiosk with an image of Iribe */
 .background-image{
-    margin-left:25%;
-    margin-right:25%;
+    margin-left:15%;
+    /* margin-right:25%; */
     height:100%;
     background-color: white;
     /* border: 5px solid black; */
