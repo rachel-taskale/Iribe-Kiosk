@@ -1,61 +1,34 @@
 <!DOCTYPE html>
 
 <html lang="en">
- 
-
-    
-      <div class="content background-image">
-      <div class="content overlay">
-      <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <meta http-equiv="X-UA-Compatible" content="ie=edge">
-          <link rel="stylesheet" href="./index.css">
-          <script src="./index.js"></script>
-          <script type="text/javascript">
-            function onClick(url){
-              console.log("made it here")
-              location.assign(url);
-              console.log(window.location.href);
-            }
-
-          </script>
-
-      <title>Iribe Kiosk</title>
-      </head>
-      <body>
-          <body>
-              <h1>Brendan Iribe Center for Computer Science</h1>
-              
-              <h2>You are on Floor 0</h2>
-      
-              <div id = "button-group">
-                <!-- <a href="#">
-                  <button >Welcome!</button>
-              </a> -->
-
-              <header>
-                <ul>
-                  <button class="" onclick="onClick('<put your file location here>')">Floor & Campus Map</button>
-                  <button class="" onclick="onClick('<put your file location here>')">Directory Search</button>
-                  <button class="" onclick="onClick('<put your file location here>')">Schedule of Events</button>
-                </ul>
-              </header>
-
-                <!-- <ul> -->
-                  <!-- Will eventually be a separate custom component -->
-                  <!-- <button class="landing-page-button">Floor Map + Campus Map</button>
-                  <button class="landing-page-button">Directory Search</button>
-                  <button class="landing-page-button">Schedule of Events</button>  -->
-                <!-- </ul> -->
-              </div>
-           
+    <div class="content background-image">
+        <div class="content overlay">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <link rel="stylesheet" href="../index.css">
+                <script type="text/javascript">
+                    function onClick(url){
+                        console.log("made it here")
+                        location.assign(url);
+                        console.log(window.location.href);
+                    }
+                </script>
+                <title>Iribe Kiosk</title>
+            </head>
+            <body>
+                <body>
+                    <h1>Brendan Iribe Center for Computer Science</h1>
+                    <h2>You are on Floor 0</h2>
+                    <div id = "button-group">
+                        <button class="" onclick="onClick('')">Floor & Campus Map</button>
+                        <button class="" onclick="onClick('')">Directory Search</button>
+                        <button class="" onclick="onClick('')">Schedule of Events</button>
+                    </div>
+                </body>
             </body>
-
-
-      </body>
     </div>
-
   </div>
 
 </html>

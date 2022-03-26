@@ -5,12 +5,13 @@
 html{
     background-color: gray;
     font-family: 'Inter', sans-serif;
-    width:1500px;
-    height:3000px;    
+   
 }
 
 .content {
-    border: 5px solid black;
+    height:300px;
+    width: 475px;
+    border: px solid black;
 }
 
 /* Creates the background for Iribe kiosk with an image of Iribe */
@@ -19,11 +20,10 @@ html{
     margin-right:25%;
     height:100%;
     background-color: white;
-    border: 5px solid black;
-
+    /* border: 5px solid black; */
     align-items: center;
     text-align: center;
-    padding:10px;
+    /* padding:10px; */
     background-image: url("../public/image.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -33,35 +33,38 @@ html{
 
 /* Transparent blue overlay */
 .overlay{
-    background-color: rgba(183, 207, 231, 0.8);
+    background-color: rgba(4, 68, 133, 0.8);
+    border: 1px black solid;
 }
 
 /* Setting global styles for standard practice */
 h1{
-    color:black;
+    color:white;
     font-weight: bold;
-    font-size:40px;
+    font-size:30px;
     margin-left:20%;
     margin-right:20%;
-    margin-top: 20%;
+    margin-top: 5%;
 }
 
 h2{
-    color:black;
+    color:white;
     font-size:22px;
-    margin-top:20%;
+    margin-top:5%;
 }
 p{
     font-size:14px;
 }
 
 button{
-    height:100px;
-    width: 60%;
+    height:50px;
+    width: 27%;
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    margin:5%;
+    font-size: 90%;
+    margin:2.5%;
+    /* margin:5%; */
 }
 
 button:focus{
@@ -71,6 +74,8 @@ button:focus{
 
 /* Design the button group */
 .button-group{
+    display: inline-block;
+    border: 1px black solid;
 }
 
 /* This will be moved to a separate component */
