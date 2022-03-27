@@ -33,7 +33,7 @@ html{
 
 /* Transparent blue overlay */
 .overlay{
-    background-color: rgba(108, 154, 255, 0.801);
+    background-color: rgba(183, 207, 231, 0.8);
 }
 
 /* Setting global styles for standard practice */
@@ -47,7 +47,7 @@ h1{
 }
 
 h2{
-    color:white;
+    color:black;
     font-size:22px;
     margin-top:20%;
 }
@@ -58,14 +58,14 @@ p{
 button{
     height:100px;
     width: 60%;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.8);
     box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     margin:5%;
 }
 
 button:focus{
-    background-color: rgba(255, 255, 255, .9);
+    background-color: rgba(255, 255, 255, 1);
 }
 
 
