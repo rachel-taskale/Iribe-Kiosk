@@ -8,13 +8,7 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <meta http-equiv="X-UA-Compatible" content="ie=edge">
                 <link rel="stylesheet" href="../index.css">
-                <script type="text/javascript">
-                    function onClick(url){
-                        console.log("made it here")
-                        location.assign(url);
-                        console.log(window.location.href);
-                    }
-                </script>
+                
                 <title>Iribe Kiosk</title>
             </head>
             <body>
@@ -22,9 +16,21 @@
                     <h1>Brendan Iribe Center for Computer Science</h1>
                     <h2>You are on Floor 0</h2>
                     <div id = "button-group">
-                        <button class="landing-page-button" onclick="onClick('')">Floor & Campus Map</button>
-                        <button class="landing-page-button" onclick="onClick('')">Directory Search</button>
-                        <button class="landing-page-button" onclick="onClick('')">Schedule of Events</button>
+                        <button class="landing-page-button" id="map" >Floor & Campus Map</button>
+                        <button class="landing-page-button" id="search" >Directory Search</button>
+                        <button class="landing-page-button" id="calendar">Schedule of Events</button>
+                        
+                        <script type="text/javascript">
+                            document.getElementById("map").onclick = function() {
+                              location.href = "./map-page.html";
+                            };
+                            document.getElementById("search").onclick = function() {
+                              location.href = "./directory-search.html";
+                            };
+                            document.getElementById("calendar").onclick = function() {
+                              location.href = "./calendar-page.html";
+                            };
+                        </script>
                     </div>
                 </body>
             </body>
@@ -37,12 +43,7 @@
                 >
         </div>
     </div>
-    <!-- <img src="../iribe.png" alt="Image of Iribe" width="750" height="400"
-    style="position:absolute;
-    left:197px;
-    bottom:30px;
-    opacity:0.25;"
-> -->
+
   </div>
 
 </html>

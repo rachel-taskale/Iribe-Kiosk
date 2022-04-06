@@ -26,7 +26,7 @@ html{
     background-position-x:30px;
     /* opacity:0.25; */
     background-repeat: no-repeat;
-    background-size: 750px 400px;
+    background-size: 850px 400px;
     /* width:750px;
     height:400px */
 
@@ -52,7 +52,7 @@ h1{
 
 h2{
     color:rgba(4, 68, 133, 0.8);
-    font-size:22px;
+    font-size:32px;
     margin-top:5%;
     margin-left:10%;
     margin-right:10%;
@@ -61,6 +61,7 @@ h2{
 
 h3{
     color:rgba(4, 68, 133, 0.8);
+    font-size:24px;
 }
 
 p{
@@ -68,41 +69,31 @@ p{
     color: rgba(4, 68, 133, 0.8);
 }
 
-/* button{
-    height:100px;
-    width: 27%;
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    font-size: 100%;
-    margin:2.5%;
-    /* margin:5%; */
-/* } */
-
-
-
 
 /* Design the button group */
 .button-group{
     display: inline-block;
-    border: 1px black solid;
+    /* border: 1px black solid; */
 }
 
 /* This will be moved to a separate component */
 .landing-page-button{
     height:100px;
-    width: 27%;
-    background-color: rgba(255, 255, 255, .9);
+    width: 20%;
+    word-wrap: break-word;
+    /* background-color: rgba(219, 235, 250, 1); */
+    background-color: white;
     box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    font-size: 100%;
+    font-size: 25px;
+    overflow: auto;
     margin:2.5%;
     color:black;
+    border:1px solid white;
 }
 
 .landing-page-button:focus{
     background-color: rgba(255, 255, 255, 1);
-
 }
 
 
