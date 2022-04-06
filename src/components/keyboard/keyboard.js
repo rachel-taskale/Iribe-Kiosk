@@ -51,9 +51,7 @@ const Keyboard = {
         ];
 
         // Creates HTML for an icon
-        const createIconHTML = (icon_name) => {
-            return `<i class="material-icons">${icon_name}</i>`;
-        };
+        const createIconHTML = (icon_name) =>`<i class="material-icons">${icon_name}</i>`;
 
         keyLayout.forEach(key => {
             const keyElement = document.createElement("button");
@@ -140,7 +138,7 @@ const Keyboard = {
         return fragment;
     },
 
-    _triggerEvent(handlerName) {function
+    _triggerEvent(handlerName) {
         if (typeof this.eventHandlers[handlerName] == "function") {
             this.eventHandlers[handlerName](this.properties.value);
         }

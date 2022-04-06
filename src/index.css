@@ -11,14 +11,14 @@ html{
 .content {
     height:540px;
     width: 855px;
-    background-color: white;
+    background-color: #fffaeb;
 }
 
 /* Creates the background for Iribe kiosk with an image of Iribe */
 .background-image{
     margin-left:15%;
     height:100%;
-    background-color: white;
+    background-color: #fffaeb;
     align-items: center;
     text-align: center;
     background-image: url("./iribe.png");
@@ -35,7 +35,7 @@ html{
 /* Transparent blue overlay */
 .overlay{
     /* background-color: rgba(4, 68, 133, 0.8); */
-    background-color:rgba(255,255,255,.8);
+    background-color:rgba(255, 250, 235,.8);
     border: 1px black solid;
 }
 
@@ -82,14 +82,18 @@ p{
     width: 20%;
     word-wrap: break-word;
     /* background-color: rgba(219, 235, 250, 1); */
-    background-color: white;
+    background-color: rgb(239, 239, 239);
     box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     font-size: 25px;
     overflow: auto;
     margin:2.5%;
     color:black;
-    border:1px solid white;
+    border:1px solid rgba(239, 239, 239, 1);
+}
+
+.landing-page-button:hover{
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .landing-page-button:focus{
@@ -104,3 +108,56 @@ p{
     font-size:20px;
 
 }
+
+
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 12px;
+    
+
+  }
+  
+  a:hover {
+    color: black;
+    /* background-color: rbga(255,255,255,.3); */
+  }
+  
+  .previous {
+    background-color: #f1f1f1;
+    color: black;
+
+  }
+  
+  .round {
+    border-radius: 50%;
+    position:fixed;
+    left:240px;
+    top:40px;
+    background-color: #282a3a;
+    opacity: .3;
+    color: white;
+    font-size: large;
+  }
+
+
+  .back{
+      margin-left:-30%;
+  }
+
+  .parent {
+    /* border: 1px solid black; */
+    margin: 1rem;
+    /* padding: 1rem 1rem; */
+    /* text-align: center; */
+  }
+  .child {
+    display: inline-block;
+    /* padding: 1rem 1rem; */
+    vertical-align: middle;
+  }
+
+
+
+  
