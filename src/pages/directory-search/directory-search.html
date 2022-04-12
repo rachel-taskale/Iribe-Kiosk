@@ -18,23 +18,25 @@
                     <div>
                         <a href="../landing-page.html" class="previous round">&#129044;</a>
                         <h2>Brendan Iribe Center for Computer Science</h2>
-                        <img src="../../images/sign-out.png" width="40px" height="40px" style="position:absolute; left:1000px; top:50px; opacity:.3;">
+                        <img src="../../images/sign-out.png" id="home" width="40px" height="40px" style="position:absolute; left:1000px; top:50px; opacity:.3;">
                     </div>
                     <h3>Directory Search</h3>
                     <p>Use the input bar below to search through the CS directory of professors, faculty, cs dept members</p>                
                         <div class="directory-search">
-                            <div class="form" style="border:1px solid black; height:50px;">
+                            <div class="form" style=" height:50px;">
                                 <form role="search" id="form" class="search-stuff">
                                     <input type="search" id="query" class="use-keyboard-input " name="q"
                                     placeholder="Search..."
                                     aria-label="Search through site content"
                                     >
-                                    <button
+                                    
+                                    
+                                </form>
+                                <button
                                     id="search" class="dir-search butt"
                                     style="margin-left:80%; font-size:100%; "
                                     >Search</button>
-                                    
-                                </form>
+                                
                                 <button id="add-filter" class="butt">Add Filter</button>
                                 <div class="row">
                                    
@@ -50,11 +52,14 @@
                             <script type="text/javascript">
                                 const search_filters = {}
 
+                                document.getElementById("home").onclick = function() {
+                                    location.href = "../landing-page.html";
+                                };
                                 
                                 document.getElementById("search").onclick = function() {
                                     console.log('made it here')
                                   location.href = "./search-results.html"
-                                }
+                                };
 
                                 
                                 document.getElementById("add-filter").onclick = function() {

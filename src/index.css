@@ -181,7 +181,6 @@ a {
     }
 
 #filters-list{
-    border: 1px solid black;
     margin-left:10%;
     margin-right:10%;
     
@@ -221,7 +220,6 @@ a {
       margin-top:-10%;
       margin-left:80%;
       font-size: 100%;
-      border:1px solid black;
   }
 
   .delete-but{
@@ -233,8 +231,4 @@ a {
 
 
     
-  }
-
-  .dir-search{
-      margin-top:-1000px;
   }
