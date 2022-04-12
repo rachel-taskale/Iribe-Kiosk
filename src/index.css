@@ -21,7 +21,7 @@ html{
     background-color: #fffaeb;
     align-items: center;
     text-align: center;
-    background-image: url("./iribe.png");
+    background-image: url("./images/iribe.png");
     background-position-y:150px;
     background-position-x:30px;
     /* opacity:0.25; */
@@ -82,14 +82,14 @@ p{
     width: 20%;
     word-wrap: break-word;
     /* background-color: rgba(219, 235, 250, 1); */
-    background-color: rgb(239, 239, 239);
+    background-color: #fffcf3;
     box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     font-size: 25px;
     overflow: auto;
     margin:2.5%;
     color:black;
-    border:1px solid rgba(239, 239, 239, 1);
+    border:1px solid #fffcf3;
 }
 
 .landing-page-button:hover{
@@ -133,8 +133,8 @@ a {
   .round {
     border-radius: 50%;
     position:fixed;
-    left:240px;
-    top:40px;
+    left:230px;
+    top:50px;
     background-color: #282a3a;
     opacity: .3;
     color: white;
@@ -160,4 +160,11 @@ a {
 
 
 
-  
+  .filter-choice{
+        border: 1px solid black;
+        width:20%;
+        border-radius: 5px;
+        /* justify-content:flex-start; */
+        display:inline-flex;
+        margin:1%;
+  }
