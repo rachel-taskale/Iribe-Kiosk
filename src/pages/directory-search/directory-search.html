@@ -10,6 +10,7 @@
                 <link rel="stylesheet" href="../../index.css">
                 <link rel="stylesheet" href="../../components/keyboard/keyboard.css">
                 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+                
                 <title>Iribe Kiosk</title>
             </head>
             <body>
@@ -22,25 +23,32 @@
                     <h3>Directory Search</h3>
                     <p>Use the input bar below to search through the CS directory of professors, faculty, cs dept members</p>                
                         <div class="directory-search">
-                            <div class="form" style="border:1px solid black; height:100px;">
-                                <form role="search" id="form" style="display: inline;border:1px solid black;">
-                                    <input type="search" id="query" class="use-keyboard-input" name="q"
+                            <div class="form" style="border:1px solid black; height:50px;">
+                                <form role="search" id="form" class="search-stuff">
+                                    <input type="search" id="query" class="use-keyboard-input " name="q"
                                     placeholder="Search..."
                                     aria-label="Search through site content"
-                                    style="position:fixed; width:50%; margin-left:0%;background-color: white; color: white;">
+                                    >
                                     <button
-                                    id="search"
+                                    id="search" class="dir-search butt"
                                     style="margin-left:80%; font-size:100%; "
-                                    >search</button>
+                                    >Search</button>
                                     
                                 </form>
-                                <button id="add-filter" style="margin-left:80%; font-size:100%;">Add Filter</button>
-                                <div id="filters-list"></div>
+                                <button id="add-filter" class="butt">Add Filter</button>
+                                <div class="row">
+                                   
+                                    <div id="filters-list">
+                                        <div class="column">
+
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <script src="../../components/keyboard/keyboard.js"></script>
 
                             <script type="text/javascript">
-                                const search_filters = []
+                                const search_filters = {}
 
                                 
                                 document.getElementById("search").onclick = function() {
@@ -48,21 +56,38 @@
                                   location.href = "./search-results.html"
                                 }
 
-                              
-
                                 
                                 document.getElementById("add-filter").onclick = function() {
                                     var t = document.getElementById("query").value;
                                     console.log(`input: ${t}`)
-                                    search_filters.push(t)
+                                    search_filters[t] = 1
                                     console.log(search_filters)
                                     ref = document.getElementById("filters-list")
-                                    
-                                    // for (i in search_filters){
-                                        ref.innerHTML += `<div class=\"filter-choice\"><p>${search_filters[search_filters.length-1]}</p></div>`
-                                    
-                                    // }
-                                    // document.getElementById("filters-list").innerHTML = search_filters;
+                                    ref.innerHTML += ` <div class="column">
+                                                            <div class="filter-choice">
+                                                                <p id="filter-val">${t}</p>
+                                                                <button class="delete-but" onclick="processReq(\`${t}\`)" >&#10005;</button>
+                                                            </div>
+                                                    </div>`
+
+                                    console.log(ref)
+                                }
+
+                                function processReq(val){
+                                    console.log(`val: ${val}`)
+                                    delete search_filters[val]
+                                    console.log(search_filters)
+                                    ref = document.getElementById("filters-list")
+                                    ref.innerHTML = ``
+                                    for (i in search_filters){
+                                        console.log(i)
+                                        ref.innerHTML += `<div class="column">
+                                                                <div class="filter-choice">
+                                                                    <p id="filter-val">${i}</p>
+                                                                    <button class="delete-but" onclick="processReq(\`${i}\`)" >&#10005;</button>
+                                                                </div>
+                                                        </div>`
+                                    }
                                 }
 
 
@@ -71,7 +96,7 @@
                         </div>
                 </body>
             </body>
-            <img src="../umd-logo.png" alt="Description for image" width="200" height="75"
+            <img src="../../images/umd-logo.png" alt="Description for image" width="200" height="75"
             style="position: absolute;
             left: 210px;
             bottom: 30px;"

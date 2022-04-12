@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
 @import url('../public/image.jpg');
 
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+
 /*  */
 html{
     background-color: gray;
@@ -161,10 +163,78 @@ a {
 
 
   .filter-choice{
-        border: 1px solid black;
-        width:20%;
+        /* border: 1px solid black; */
+        width:fit-content;
         border-radius: 5px;
         /* justify-content:flex-start; */
         display:inline-flex;
+        align-items: left;
         margin:1%;
+        background-color: white;
+        text-align: center;
+        color: black;
+        /* padding-left: 10%; */
+        padding-left:1%;
+        padding-right:1%;
+        font-size: small;
+        box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+
+#filters-list{
+    border: 1px solid black;
+    margin-left:10%;
+    margin-right:10%;
+    
+}
+
+.column {
+    float: left;
+    width:fit-content;
+    padding: 0 10px;
+
+    
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {
+      /* margin: 0 -5px; */
+      margin-left:-10px;
+}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  .butt{
+      margin-top:-10%;
+      margin-left:80%;
+      font-size: 100%;
+      border:1px solid black;
+  }
+
+  .delete-but{
+    color:blue; 
+    padding-left:10px;
+    font-weight:bold;
+    background-color: white;
+    box-shadow:0px 0px 0px 0px rgba(255, 255, 255, 0);
+
+
+    
+  }
+
+  .dir-search{
+      margin-top:-1000px;
   }
