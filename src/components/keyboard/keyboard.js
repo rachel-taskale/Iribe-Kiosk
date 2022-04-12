@@ -31,7 +31,6 @@ const Keyboard = {
         this.elements.main.appendChild(this.elements.keysContainer);
         document.body.appendChild(this.elements.main);
 
-        // Automatically use keyboard for elements with .use-keyboard-input
         document.querySelectorAll(".use-keyboard-input").forEach(element => {
             element.addEventListener("focus", () => {
                 this.open(element.value, currentValue => {
@@ -52,9 +51,7 @@ const Keyboard = {
         ];
 
         // Creates HTML for an icon
-        const createIconHTML = (icon_name) => {
-            return `<i class="material-icons">${icon_name}</i>`;
-        };
+        const createIconHTML = (icon_name) =>`<i class="material-icons">${icon_name}</i>`;
 
         keyLayout.forEach(key => {
             const keyElement = document.createElement("button");

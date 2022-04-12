@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <div class="content background-image">
+        <div class="content overlay">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <link rel="stylesheet" href="../../index.css">
+                <link rel="stylesheet" href="../../components/keyboard/keyboard.css">
+                <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+                
+                <title>Iribe Kiosk</title>
+            </head>
+            <body>
+                <body>
+                    <div>
+                        <a href="../landing-page.html" class="previous round">&#129044;</a>
+                        <h2>Brendan Iribe Center for Computer Science</h2>
+                        <img src="../../images/sign-out.png" id="home" width="40px" height="40px" style="position:absolute; left:1000px; top:50px; opacity:.3;">
+                    </div>
+                    <h3>Directory Search</h3>
+                    <p>Use the input bar below to search through the CS directory of professors, faculty, cs dept members</p>                
+                        <div class="directory-search">
+                            <div class="form" style=" height:50px;">
+                                <form role="search" id="form" class="search-stuff">
+                                    <input type="search" id="query" class="use-keyboard-input " name="q"
+                                    placeholder="Search..."
+                                    aria-label="Search through site content"
+                                    >
+                                    
+                                    
+                                </form>
+                                <button
+                                    id="search" class="dir-search butt"
+                                    style="margin-left:80%; font-size:100%; "
+                                    >Search</button>
+                                
+                                <button id="add-filter" class="butt">Add Filter</button>
+                                <div class="row">
+                                   
+                                    <div id="filters-list">
+                                        <div class="column">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <script src="../../components/keyboard/keyboard.js"></script>
+
+                            <script type="text/javascript">
+                                const search_filters = {}
+
+                                document.getElementById("home").onclick = function() {
+                                    location.href = "../landing-page.html";
+                                };
+                                
+                                document.getElementById("search").onclick = function() {
+                                    console.log('made it here')
+                                  location.href = "./search-results.html"
+                                };
+
+                                
+                                document.getElementById("add-filter").onclick = function() {
+                                    var t = document.getElementById("query").value;
+                                    console.log(`input: ${t}`)
+                                    search_filters[t] = 1
+                                    console.log(search_filters)
+                                    ref = document.getElementById("filters-list")
+                                    ref.innerHTML += ` <div class="column">
+                                                            <div class="filter-choice">
+                                                                <p id="filter-val">${t}</p>
+                                                                <button class="delete-but" onclick="processReq(\`${t}\`)" >&#10005;</button>
+                                                            </div>
+                                                    </div>`
+
+                                    console.log(ref)
+                                }
+
+                                function processReq(val){
+                                    console.log(`val: ${val}`)
+                                    delete search_filters[val]
+                                    console.log(search_filters)
+                                    ref = document.getElementById("filters-list")
+                                    ref.innerHTML = ``
+                                    for (i in search_filters){
+                                        console.log(i)
+                                        ref.innerHTML += `<div class="column">
+                                                                <div class="filter-choice">
+                                                                    <p id="filter-val">${i}</p>
+                                                                    <button class="delete-but" onclick="processReq(\`${i}\`)" >&#10005;</button>
+                                                                </div>
+                                                        </div>`
+                                    }
+                                }
+
+
+
+                        </script>
+                        </div>
+                </body>
+            </body>
+            <img src="../../images/umd-logo.png" alt="Description for image" width="200" height="75"
+            style="position: absolute;
+            left: 210px;
+            bottom: 30px;"
+            >
+    </div>
+  </div>
+
+</html>

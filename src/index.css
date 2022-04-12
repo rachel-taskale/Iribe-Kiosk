@@ -1,41 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
 @import url('../public/image.jpg');
 
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+
 /*  */
 html{
     background-color: gray;
     font-family: 'Inter', sans-serif;
-   
+       
 }
 
 .content {
     height:540px;
     width: 855px;
+    background-color: #fffaeb;
 }
 
 /* Creates the background for Iribe kiosk with an image of Iribe */
 .background-image{
     margin-left:15%;
     height:100%;
-    background-color: white;
+    background-color: #fffaeb;
     align-items: center;
     text-align: center;
-    background-image: url("../public/image.jpg");
-    background-position: center;
+    background-image: url("./images/iribe.png");
+    background-position-y:150px;
+    background-position-x:30px;
+    /* opacity:0.25; */
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 850px 400px;
+    /* width:750px;
+    height:400px */
 
 }
 
 /* Transparent blue overlay */
 .overlay{
-    background-color: rgba(4, 68, 133, 0.8);
+    /* background-color: rgba(4, 68, 133, 0.8); */
+    background-color:rgba(255, 250, 235,.8);
     border: 1px black solid;
 }
 
 /* Setting global styles for standard practice */
 h1{
-    color:white;
+    color:rgba(4, 68, 133, 0.8);
     font-weight: bold;
     font-size:40px;
     margin-left:10%;
@@ -45,53 +53,53 @@ h1{
 }
 
 h2{
-    color:white;
-    font-size:22px;
+    color:rgba(4, 68, 133, 0.8);
+    font-size:32px;
     margin-top:5%;
     margin-left:10%;
     margin-right:10%;
+    font-weight: bold;
 }
+
+h3{
+    color:rgba(4, 68, 133, 0.8);
+    font-size:24px;
+}
+
 p{
     font-size:14px;
+    color: rgba(4, 68, 133, 0.8);
 }
-
-/* button{
-    height:100px;
-    width: 27%;
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    font-size: 100%;
-    margin:2.5%;
-    /* margin:5%; */
-/* } */
-
-button:focus{
-    background-color: rgba(255, 255, 255, 1);
-} */
 
 
 /* Design the button group */
 .button-group{
     display: inline-block;
-    border: 1px black solid;
+    /* border: 1px black solid; */
 }
 
 /* This will be moved to a separate component */
 .landing-page-button{
     height:100px;
-    width: 27%;
-    background-color: rgba(255, 255, 255, 0.8);
+    width: 20%;
+    word-wrap: break-word;
+    /* background-color: rgba(219, 235, 250, 1); */
+    background-color: #fffcf3;
     box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    font-size: 100%;
+    font-size: 25px;
+    overflow: auto;
     margin:2.5%;
     color:black;
+    border:1px solid #fffcf3;
+}
+
+.landing-page-button:hover{
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .landing-page-button:focus{
     background-color: rgba(255, 255, 255, 1);
-
 }
 
 
@@ -102,3 +110,125 @@ button:focus{
     font-size:20px;
 
 }
+
+
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 12px;
+    
+
+  }
+  
+  a:hover {
+    color: black;
+    /* background-color: rbga(255,255,255,.3); */
+  }
+  
+  .previous {
+    background-color: #f1f1f1;
+    color: black;
+
+  }
+  
+  .round {
+    border-radius: 50%;
+    position:fixed;
+    left:230px;
+    top:50px;
+    background-color: #282a3a;
+    opacity: .3;
+    color: white;
+    font-size: large;
+  }
+
+
+  .back{
+      margin-left:-30%;
+  }
+
+  .parent {
+    /* border: 1px solid black; */
+    margin: 1rem;
+    /* padding: 1rem 1rem; */
+    /* text-align: center; */
+  }
+  .child {
+    display: inline-block;
+    /* padding: 1rem 1rem; */
+    vertical-align: middle;
+  }
+
+
+
+  .filter-choice{
+        /* border: 1px solid black; */
+        width:fit-content;
+        border-radius: 5px;
+        /* justify-content:flex-start; */
+        display:inline-flex;
+        align-items: left;
+        margin:1%;
+        background-color: white;
+        text-align: center;
+        color: black;
+        /* padding-left: 10%; */
+        padding-left:1%;
+        padding-right:1%;
+        font-size: small;
+        box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+
+#filters-list{
+    margin-left:10%;
+    margin-right:10%;
+    
+}
+
+.column {
+    float: left;
+    width:fit-content;
+    padding: 0 10px;
+
+    
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {
+      /* margin: 0 -5px; */
+      margin-left:-10px;
+}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  .butt{
+      margin-top:-10%;
+      margin-left:80%;
+      font-size: 100%;
+  }
+
+  .delete-but{
+    color:blue; 
+    padding-left:10px;
+    font-weight:bold;
+    background-color: white;
+    box-shadow:0px 0px 0px 0px rgba(255, 255, 255, 0);
+
+
+    
+  }
