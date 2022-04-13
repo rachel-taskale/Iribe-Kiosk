@@ -26,10 +26,7 @@
     <div class="row" style="display:flex; margin-left:10%; background-color: #282a3a; margin-right:10%; padding-top: .5%; padding-left: 5%;">
         <button id="floor-map" class="map-button" role="button">Floor Map</button>
         <button id="campus-map" class="map-button">Campus Map</button>
-    </div>
-    <div style="margin-right:10%; margin-left:10%; margin-bottom: 1%; border:1px solid black; background-color: gray">
-        <select id="dropdown" onChange="setPicture('imgid',  this.value);" >
-            
+        <select id="dropdown" onChange="setPicture('imgid', this.value);" style="margin-left:10%;">
             <option value="../../../public/G.png">Ground Floor</option>
             <option value="../../../public/M0.png">Ground Floor Mezzanine</option>
             <option value="../../../public/1.png">Floor #1</option>
@@ -39,11 +36,15 @@
             <option value="../../../public/5.png">Floor #5</option>
             <option value="../../../public/6.png">Floor #6</option>
             <option value="../../../public/B0.png">Basement</option>
-            
+
         </select>
+    </div>
+    <div style="margin-right:10%; margin-left:10%; margin-bottom: 1%; border:1px solid black; background-color: gray">
 
         <img src="../../images/sign-out.png" id="home" width="35px" height="35px" style="position:absolute; left:1000px; top:50px; opacity:.3; border:1px solid black;">
-        <td>
+        
+    <!-- </div> -->
+    <td>
         <img src="../../../public/G.png" id="imgid" width=600 style="border:1px solid black; align-items: center;">
         </td>
         <script type="text/javascript">
@@ -54,6 +55,10 @@
 
             document.getElementById('campus-map').onclick = function(){
                 location.href = './campus-map-page.html'
+            }
+
+            document.getElementById("home").onclick = function() {
+                                    location.href = "../landing-page.html";
             }
         </script>
     </div>

@@ -23,21 +23,25 @@
                     <h3>Directory Search</h3>
                     <p>Use the input bar below to search through the CS directory of professors, faculty, cs dept members</p>                
                         <div class="directory-search">
-                            <div class="form" style=" height:50px;">
+                            <div class="form" style="display: flex;">
+                                
+                                <div  class="col" style=" width:70%; margin-left:15%; margin-right:0%;">
                                 <form role="search" id="form" class="search-stuff">
                                     <input type="search" id="query" class="use-keyboard-input " name="q"
                                     placeholder="Search..."
                                     aria-label="Search through site content"
+                                    style="width:100%;"
                                     >
-                                    
-                                    
                                 </form>
+                            </div>
+                            <div class="col" style="width:fit-content; margin-top: 2%;">
                                 <button
                                     id="search" class="dir-search butt"
-                                    style="margin-left:80%; font-size:100%; "
+                                    style="margin-left:60%; "
                                     >Search</button>
-                                
-                                <button id="add-filter" class="butt">Add Filter</button>
+                            </div>
+                        </div>
+                                <button id="add-filter" class="butt" style="margin-left:85%; margin-top: 2%;">Add Filter</button>
                                 <div class="row">
                                    
                                     <div id="filters-list">
@@ -54,12 +58,11 @@
 
                                 document.getElementById("home").onclick = function() {
                                     location.href = "../landing-page.html";
-                                };
+                                }
                                 
                                 document.getElementById("search").onclick = function() {
-                                    console.log('made it here')
                                   location.href = "./search-results.html"
-                                };
+                                }
 
                                 
                                 document.getElementById("add-filter").onclick = function() {
