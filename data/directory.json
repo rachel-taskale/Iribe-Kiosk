@@ -1,0 +1,341 @@
+
+{
+   "staff": [
+      {
+         "name": "Daniel Abadi",
+         "email": "N/A",
+         "phone number": "3014059695",
+         "room number": "IRB5156"
+      },
+      {
+         "name": "Ashok Agrawala",
+         "email": "agrawala@cs.umd.edu",
+         "phone number": "3014052525",
+         "room number": "IRB5204"
+      },
+      {
+         "name": "John Aloimonos",
+         "email": "yiannis@cs.umd.edu",
+         "phone number": "3014051743",
+         "room number": "IRB4214"
+      },
+      {
+         "name": "Clifford Bakalian",
+         "email": "cbakalia@umd.edu",
+         "phone number": "N/A",
+         "room number": "IRB2238"
+      },
+      {
+         "name": "Abhinav Bhatele",
+         "email": "bhatele@cs.umd.edu",
+         "phone number": "3014054507",
+         "room number": "IRB5218"
+      },
+      {
+         "name": "Bobby Bhattacharjee",
+         "email": "bobby@cs.umd.edu",
+         "phone number": "3014051658",
+         "room number": "IRB5140"
+      },
+      {
+         "name": "Jordan Boyd-Graber",
+         "email": "jbg@cs.umd.edu",
+         "phone number": "3014056766",
+         "room number": "IRB4146"
+      },
+      {
+         "name": "Jose Calderon",
+         "email": "jmct@umd.edu",
+         "phone number": "N/A",
+         "room number": "N/A"
+      },
+      {
+         "name": "Marine Carpuat",
+         "email": "marine@cs.umd.edu",
+         "phone number": "3014058801",
+         "room number": "IRB4130"
+      },
+      {
+         "name": "Andrew Childs",
+         "email": "amchilds@cs.umd.edu",
+         "phone number": "3014052329",
+         "room number": "ATL3100"
+      },
+      {
+         "name": "Rance Cleaveland",
+         "email": "rance@cs.umd.edu",
+         "phone number": "3014058572",
+         "room number": "IRB5160"
+      },
+      {
+         "name": "Hal Daumé III",
+         "email": "hal@umiacs.umd.edu",
+         "phone number": "3014051073",
+         "room number": "IRB4150"
+      },
+      {
+         "name": "Amol Deshpande",
+         "email": "amol@cs.umd.edu",
+         "phone number": "3014052703",
+         "room number": "IRB5154"
+      },
+      {
+         "name": "John Dickerson",
+         "email": "john@cs.umd.edu",
+         "phone number": "3014052774",
+         "room number": "IRB4128"
+      },
+      {
+         "name": "Ramani Duraiswami",
+         "email": "ramani@umiacs.umd.edu",
+         "phone number": "3014056710",
+         "room number": "IRB4244"
+      },
+      {
+         "name": "Roger Eastman",
+         "email": "reastman@umd.edu",
+         "phone number": "3014052773",
+         "room number": "AWW3235"
+      },
+      {
+         "name": "Howard Elman",
+         "email": "elman@cs.umd.edu",
+         "phone number": "3014052694",
+         "room number": "IRB4210"
+      },
+      {
+         "name": "Fawzi Emad",
+         "email": "fpe@cs.umd.edu",
+         "phone number": "3014052709",
+         "room number": "IRB2212"
+      },
+      {
+         "name": "Soheil Feizi",
+         "email": "sfeizi@cs.umd.edu",
+         "phone number": "3014058743",
+         "room number": "IRB4202"
+      },
+      {
+         "name": "William Gasarch",
+         "email": "gasarch@cs.umd.edu",
+         "phone number": "3014052698",
+         "room number": "IRB2242"
+      },
+      {
+         "name": "Tom Goldstein",
+         "email": "N/A",
+         "phone number": "3014050053",
+         "room number": "IRB4212"
+      },
+      {
+         "name": "Evan Golub",
+         "email": "egolub@cs.umd.edu",
+         "phone number": "3014050180",
+         "room number": "IRB1210"
+      },
+      {
+         "name": "Daniel Gottesman",
+         "email": "dgottesm@umd.edu",
+         "phone number": "N/A",
+         "room number": "ATL3251"
+      },
+      {
+         "name": "Mohammad Hajiaghayi",
+         "email": "hajiagha@cs.umd.edu",
+         "phone number": "3014056724",
+         "room number": "IRB5158"
+      },
+      {
+         "name": "Larry Herman",
+         "email": "larry@cs.umd.edu",
+         "phone number": "3014052762",
+         "room number": "IRB1124"
+      },
+      {
+         "name": "Michael Hicks",
+         "email": "mwh@cs.umd.edu",
+         "phone number": "3014052710",
+         "room number": "IRB5246"
+      },
+      {
+         "name": "Jeffrey K. Hollingsworth",
+         "email": "hollings@umd.edu",
+         "phone number": "3014057700",
+         "room number": "IRB5152"
+      },
+       {
+         "name": "Furong Huang",
+         "email": "furongh@cs.umd.edu",
+         "phone number": "3014058010",
+         "room number": "IRB4204"
+      },
+       {
+         "name": "Michelle Hugue",
+         "email": "meesh@cs.umd.edu",
+         "phone number": "3014053012",
+         "room number": "IRB1250"
+      },
+       {
+         "name": "David Jacobs",
+         "email": "djacobs@cs.umd.edu",
+         "phone number": "3014050679",
+         "room number": "IRB4240"
+      },
+       {
+         "name": "Jonathan Katz",
+         "email": "jkatz@cs.umd.edu",
+         "phone number": "3014051226",
+         "room number": "IRB5226"
+      },
+       {
+         "name": "Pete Keleher",
+         "email": "keleher@cs.umd.edu",
+         "phone number": "3014050345",
+         "room number": "IRB5146"
+      },
+       {
+         "name": "Clyde Kruskal",
+         "email": "kruskal@cs.umd.edu",
+         "phone number": "3014052683",
+         "room number": "IRB2240"
+      },
+       {
+         "name": "Leonidas Lampropoulos",
+         "email": "leonidas@umd.edu",
+         "phone number": "N/A",
+         "room number": "IRB5248"
+      },
+       {
+         "name": "Dave Levin",
+         "email": "dml@cs.umd.edu",
+         "phone number": "3014058515",
+         "room number": "IRB5222"
+      },
+       {
+         "name": "Ming Lin",
+         "email": "lin@cs.umd.edu",
+         "phone number": "3014052662",
+         "room number": "IRB5162"
+      },
+        {
+         "name": "Zhicheng Liu",
+         "email": "leozcliu@umd.edu",
+         "phone number": "N/A",
+         "room number": "N/A"
+      },
+        {
+         "name": "Dinesh Manocha",
+         "email": "dmanocha@umd.edu",
+         "phone number": "3014052741",
+         "room number": "IRB5164"
+      },
+        {
+         "name": "Michael Marsh",
+         "email": "mmarsh@cs.umd.edu",
+         "phone number": "3014057445",
+         "room number": "IRB2218"
+      },
+        {
+         "name": "Michelle Mazurek",
+         "email": "mmazurek@cs.umd.edu",
+         "phone number": "3014056463",
+         "room number": "AVW6463"
+      },
+        {
+         "name": "Christopher Metzler",
+         "email": "metzler@umd.edu",
+         "phone number": "N/A",
+         "room number": "IRB4236"
+      },
+        {
+         "name": "Ian Miers",
+         "email": "imiers@umd.edu",
+         "phone number": "N/A",
+         "room number": "IRB5242"
+      },
+        {
+         "name": "Stevens Miller",
+         "email": "stevensm@umd.edu",
+         "phone number": "N/A",
+         "room number": "N/A"
+      },
+        {
+         "name": "Erin Molloy",
+         "email": "ekmolloy@umd.edu",
+         "phone number": "N/A",
+         "room number": "IRB3236"
+      },
+        {
+         "name": "David Mount",
+         "email": "mount@cs.umd.edu",
+         "phone number": "3014052704",
+         "room number": "IRB4162"
+      },
+        {
+         "name": "Dana Nau",
+         "email": "nau@cs.umd.edu",
+         "phone number": "3014052684",
+         "room number": "IRB4158"
+      },
+        {
+         "name": "Nelson Padua-Perez",
+         "email": "nelson@cs.umd.edu",
+         "phone number": "3014054539",
+         "room number": "IRB2210"
+      },
+      {
+         "name": "Rob Patro",
+         "email": "rob@cs.umd.edu",
+         "phone number": "N/A",
+         "room number": "IRB3220"
+      },
+      {
+         "name": "Huaishu Peng",
+         "email": "huaishu@cs.umd.edu",
+         "phone number": "N/A",
+         "room number": "IRB4206"
+      },
+      {
+         "name": "Jandelyn Plane",
+         "email": "N/A",
+         "phone number": "3014052754",
+         "room number": "IRB1254"
+      },
+      {
+         "name": "Mihai Pop",
+         "email": "mpop@umiacs.umd.edu",
+         "phone number": "3014056722",
+         "room number": "IRB5256"
+      },
+      {
+         "name": "Adam Porter",
+         "email": "aporter@cs.umd.edu",
+         "phone number": "3014052702",
+         "room number": "IRB5212"
+      },
+      {
+         "name": "James Purtilo",
+         "email": "purtilo@umd.edu",
+         "phone number": "3014052706",
+         "room number": "IRB5214"
+      },
+      {
+         "name": "James Reggia",
+         "email": "reggia@cs.umd.edu",
+         "phone number": "3014052686",
+         "room number": "IRB4214"
+      },
+      {
+         "name": "William Regli",
+         "email": "regli@cs.umd.edu",
+         "phone number": "3014056738",
+         "room number": "IRB4152"
+      },
+      {
+         "name": "Nirupam Roy",
+         "email": "niruroy@umd.edu",
+         "phone number": "N/A",
+         "room number": "IRB3245"
+      }
+   ]
+}
