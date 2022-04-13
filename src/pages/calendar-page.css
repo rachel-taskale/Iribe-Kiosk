@@ -1,0 +1,93 @@
+table{
+    background-color: rgba(255, 255, 255, 0.712);
+    margin-right: none;
+    margin-top:-2.5%;
+}
+
+td{
+    width: 90px;
+}
+
+h5{
+    margin-top: -.5%;
+    text-align: left;
+    font-weight: 500;
+}
+
+ul{
+    margin-top:-50%;   
+    font-size: 10px;
+    text-align: left;
+    margin-left: -20%;
+}
+
+.events-filter{
+    background-color: rgba(255, 255, 255, 0.712);
+    box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border:1px solid black;
+    margin-left:1%;
+    width: fit-content;
+    max-width: 100px;
+    padding:3px;
+    overflow-wrap: break-word;
+    /* font-size: 15px; */
+    font-size:12px;
+    margin-top:-2.5%;
+    
+}
+
+input{
+    margin-top:20%;
+    margin-bottom: 20%;
+    text-align: left;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.radio-button{
+    margin-left:-18%;
+}
+
+
+.checkbox-button{
+    margin-left: -5%;
+    color: black;
+    text-align: left;
+    line-height:2.5px;
+    
+}
+
+.event{
+    width:fit-content;
+    width:80%;
+    display:flex;
+    font-size: 10px;
+}
+
+.career{
+    background-color: rgba(27, 124, 27, 0.471);
+    
+    
+}
+
+.cs-dept{
+    background-color: rgba(164, 10, 10, 0.334);
+    
+}
+
+.general{
+    background-color: rgba(67, 14, 67, 0.559);
+}
+
+li{
+    margin-bottom: 2%;
+}
+
+.check{
+    width:50%;
+}
+
+p{
+    border:1px solid black;
+    margin-left:0%;
+}
