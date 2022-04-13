@@ -1,61 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
 @import url('../public/image.jpg');
 
-/*  */
-html{
-  background-color: gray;
-  font-family: 'Inter', sans-serif;
- 
-}
-
-.content {
-  height:540px;
-  width: 855px;
-}
-
-/* Creates the background for Iribe kiosk with an image of Iribe */
-.background-image{
-  margin-left:15%;
-  height:100%;
-  background-color: white;
-  align-items: center;
-  text-align: center;
-  background-image: url("../public/image.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-
-/* Transparent blue overlay */
-.overlay{
-  background-color: rgba(4, 68, 133, 0.8);
-  border: 1px black solid;
-}
-
-/* Setting global styles for standard practice */
-h1{
-  color:white;
-  font-weight: bold;
-  font-size:22px;
-  margin-left:10%;
-  margin-right:10%;
-  margin-top: 5%;
-
-}
-
-h2{
-  color:white;
-  font: size 22px;
-  margin-top:5%;
-  margin-left:10%;
-  margin-right:10%;
-}
-p{
-  font-size:14px;
-}
-
-
 /* Dropdown Button */
 .dropbtn {
   background-color: #3498DB;
@@ -100,3 +45,49 @@ p{
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+
+
+/* CSS */
+.map-button {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #282a3a72;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  justify-content: center;
+  margin: 0;
+  padding:.5%;
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  border:1px solid rgba(255, 255, 255, 0.271)
+}
+
+.map-button:hover,
+.map-button:focus {
+  background-color: #09177f72;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.map-button:hover {
+  transform: translateY(-1px);
+}
+
+.map-button:active {
+  background-color: #09177f72;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
