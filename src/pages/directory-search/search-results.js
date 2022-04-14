@@ -43,7 +43,7 @@ const class_per_professor={
 
 
 document.getElementById("home").onclick = function() {
-    location.href = "../landing-page.html"
+    location.href = "../../index.html"
 }
 
 document.getElementById("back").onclick = function() {
