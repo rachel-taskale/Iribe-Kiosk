@@ -1,0 +1,91 @@
+
+
+  .filter-choice{
+        /* border: 1px solid black; */
+        width:fit-content;
+        border-radius: 5px;
+        /* justify-content:flex-start; */
+        display:inline-flex;
+        align-items: left;
+        margin:1%;
+        background-color: white;
+        text-align: center;
+        color: black;
+        /* padding-left: 10%; */
+        padding-left:5px;
+        padding-right:1%;
+        font-size: small;
+        box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+
+#filters-list{
+    margin-left:10%;
+    margin-right:10%;
+    
+}
+
+
+
+
+/* CSS */
+.butt {
+    background-color: rgba(51, 51, 51, 0.2);
+    border-radius: 8px;
+    border-width: 0;
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    margin-top: -70%;;
+    padding: 10px 12px;
+    text-align: center;
+    transition: all 200ms;
+    vertical-align: baseline;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  
+  
+  .delete-but {
+    background-color: white;
+    border-radius: 5px;
+    border-style: none;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .delete-but:hover,
+  .delete-but:focus {
+    background-color: rgb(255, 220, 220);
+  }
+
+  .profile-button{
+      width:90%;
+      text-align: left;
+      margin-left:5%;
+      margin-top:2%;
+  }
