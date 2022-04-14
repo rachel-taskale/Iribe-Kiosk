@@ -51,26 +51,6 @@ document.getElementById("back").onclick = function() {
 }
 
 
-document.getElementById('show-res').onclick = function(){
-    console.log(class_per_professor[search_filters[0]])
-    arr = class_per_professor[search_filters[0]]
-    id_name = 0
-    arr.forEach( function(name){
-
-        console.log(name)
-        document.getElementById('search-results').innerHTML +=  `
-        <button class="profile-button" id="profile_${id_name}">
-        ${directory[name]["name"]}
-        </button>
-
-        `
-        id_name+=1
-        }
-        
-        
-    )
-    
-}
 
 
 document.getElementById("profile_0").onclick = function(){

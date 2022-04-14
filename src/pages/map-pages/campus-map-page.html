@@ -25,7 +25,13 @@
       <a href="../landing-page.html" class="previous round">&#129044;</a>
       <h3 style="margin-top:5%; margin-left:15%; width:70%; ">Brendan Iribe Center for Computer Science</h3>
       <img src="../../images/sign-out.png" id="home" width="35px" height="35px" style="opacity:.3; margin-top:5%;">
-  </div>
+      <script type="text/javascript">
+        document.getElementById("home").onclick = function() {
+            location.href = "../landing-page.html"
+        }
+    </script>
+  
+    </div>
     <div class="row" style="display:flex; margin-left:10%; background-color: #282a3a; margin-right:10%; padding-top: .5%; padding-left: 5%;">
         <button id="floor-map" class="map-button" role="button">Floor Map</button>
         <button id="campus-map" class="map-button">Campus Map</button>

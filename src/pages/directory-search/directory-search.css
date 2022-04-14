@@ -35,7 +35,6 @@
     color: #333333;
     cursor: pointer;
     display: inline-block;
-    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -88,6 +87,7 @@
       text-align: left;
       margin-left:5%;
       margin-top:2%;
+      background-color: rgba(255, 255, 255, 0.875);
   }
 
   .use-keyboard-input{
