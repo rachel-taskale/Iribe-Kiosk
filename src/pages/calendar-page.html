@@ -15,10 +15,16 @@
                 <body>
                     <div class="container">
                         <div class="col">
-                            <div class="row">
+                            <div class="row" style="display:flex; margin-bottom: 1%;">
                                 <a href="./landing-page.html" class="previous round">&#129044;</a>
-                                <h2>Brendan Iribe Center for Computer Science</h2>
-                                <img src="../images/sign-out.png" width="40" height="40" style="position:absolute; left:1000px; top:50px; opacity:.3;">
+                                <h3 style="margin-top:5%; margin-left:15%; width:70%; ">Brendan Iribe Center for Computer Science</h3>
+                                <img src="../images/sign-out.png" id="home" width="35px" height="35px" style="opacity:.3; margin-top:5%;">
+                            <script type="text/javascript">
+                                document.getElementById("home").onclick = function() {
+                                    location.href = "./landing-page.html"
+                                }
+                            </script>
+                            
                             </div>
                         
                             <!-- <div class="row">
@@ -253,9 +259,11 @@
 
             <div>
                 <img src="../images/umd-logo.png" alt="Description for image" width="200" height="75"
-                style="position: absolute;
-                left: 210px;
-                bottom: 30px;"
+                style="
+                margin-left:-70%;
+                margin-top:-5%;
+
+                "
                 >
             </div>
 

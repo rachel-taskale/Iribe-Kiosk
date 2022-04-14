@@ -42,6 +42,14 @@ const class_per_professor={
 }
 
 
+document.getElementById("home").onclick = function() {
+    location.href = "../landing-page.html"
+}
+
+document.getElementById("back").onclick = function() {
+    location.href = "./directory-search.html"
+}
+
 
 document.getElementById('show-res').onclick = function(){
     console.log(class_per_professor[search_filters[0]])
@@ -67,7 +75,19 @@ document.getElementById('show-res').onclick = function(){
 
 document.getElementById("profile_0").onclick = function(){
     console.log(`made it `)
-    location.href = "./profile.html"
+    location.href = "./daniel_profile.html"
+}
+
+
+document.getElementById("profile_1").onclick = function(){
+    console.log(`made it `)
+    location.href = "./ashok_profile.html"
+}
+
+
+document.getElementById("profile_2").onclick = function(){
+    console.log(`made it `)
+    location.href = "./clifford_profile.html"
 }
 
 

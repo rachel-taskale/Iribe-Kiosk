@@ -132,9 +132,11 @@ a {
   .round {
     border-radius: 50%;
     position:fixed;
-    left:230px;
+    left:290px;
     top:50px;
+    text-align: left;
     background-color: #282a3a;
+
     opacity: .3;
     color: white;
     font-size: large;
@@ -145,12 +147,14 @@ a {
       margin-left:-30%;
   }
 
-/* .col{
-  float: left;
-  width:fit-content;
-  padding: 0 10px; */
 
-/* } */
+  .column {
+    float: left;
+    width:fit-content;
+    padding: 0 10px;
+
+    
+  }
   
   /* Remove extra left and right margins, due to padding */
   .row {
@@ -164,6 +168,16 @@ a {
     display: table;
     clear: both;
   }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
   
   /* Responsive columns */
   @media screen and (max-width: 600px) {

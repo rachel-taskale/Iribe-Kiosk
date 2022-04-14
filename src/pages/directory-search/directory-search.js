@@ -9,6 +9,9 @@ document.getElementById("search").onclick = function() {
     location.href = "./search-results.html"
 }
 
+document.getElementById("home").onclick = function() {
+    location.href = "../landing-page.html"
+}
 
 document.getElementById("add-filter").onclick = function() {
     var t = document.getElementById("query").value;
